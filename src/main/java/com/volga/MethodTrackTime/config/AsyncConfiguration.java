@@ -14,7 +14,7 @@ import java.util.concurrent.Executor;
 public class AsyncConfiguration implements AsyncConfigurer {
 
     @Override
-    public Executor getAsyncExecutor(){
+    public Executor getAsyncExecutor() {
         log.info("Executor запущен");
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setCorePoolSize(5);

@@ -28,11 +28,13 @@ public class MethodTrackTimeApplication {
 
     @EventListener(ApplicationReadyEvent.class)
     public void onReady() throws ExecutionException, InterruptedException {
-        infoExampleService.asyncInfo();
-        infoExampleService.info();
-        mathExampleService.asyncSum(3, 3);
-        mathExampleService.sum(1, 1);
-        arrayExampleService.asyncAdd();
-        arrayExampleService.add();
+        for (int i = 0; i < 11; i++) {
+            infoExampleService.asyncInfo();
+            infoExampleService.info();
+            mathExampleService.asyncSum(3, 3);
+            mathExampleService.sum(1, 1);
+            arrayExampleService.asyncAdd();
+            arrayExampleService.add();
+        }
     }
 }

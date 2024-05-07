@@ -18,13 +18,14 @@ public class ArrayExampleService {
             list.add((int) (Math.random() * 100));
         }
     }
+
     @TrackAsyncTime
     @Async
-    public CompletableFuture asyncAdd(){
+    public CompletableFuture asyncAdd() {
         CompletableFuture<String> text = new CompletableFuture<>();
         text.complete("go");
         ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i < 1000000; i++){
+        for (int i = 0; i < 1000000; i++) {
             list.add((int) (Math.random() * 100));
         }
         return text;

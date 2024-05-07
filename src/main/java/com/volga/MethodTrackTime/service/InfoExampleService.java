@@ -14,7 +14,7 @@ import java.util.concurrent.ExecutionException;
 public class InfoExampleService {
 
     @TrackTime
-    public void info(){
+    public void info() {
         System.out.println("Method info");
     }
 
